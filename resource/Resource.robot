@@ -28,3 +28,11 @@ Clicar no botao "login"
     
 Validar a pagina home
     Title Should Be      PRODUCTS
+
+Clicar no botao "add"
+    Click Element        id=add-to-cart-sauce-labs-bike-light
+    
+Clicar no botao "carrinho"
+    Click Element        class=shopping_cart_link
+
+
