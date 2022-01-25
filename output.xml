@@ -1,82 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220124 22:55:18.294" rpa="false" schemaversion="2">
-<suite id="s1" name="Test produto" source="C:\Users\ingri\OneDrive\Área de Trabalho\Automacao\test\Test_produto.robot">
-<test id="s1-t1" name="Caso de Teste 03: Adicionar um produto ao carrinho">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220125 19:53:35.666" rpa="false" schemaversion="2">
+<suite id="s1" name="Test usuario" source="C:\Users\ingri\OneDrive\Área de Trabalho\Automacao\test\Test_usuario.robot">
+<test id="s1-t1" name="Caso de Teste 04: Cadastro de usuario">
 <kw name="Abrir navegador" library="Resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220124 22:55:18.446" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220124 22:55:18.445" endtime="20220124 22:55:19.415"/>
+<msg timestamp="20220125 19:53:35.832" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220125 19:53:35.831" endtime="20220125 19:53:36.791"/>
 </kw>
-<status status="PASS" starttime="20220124 22:55:18.445" endtime="20220124 22:55:19.415"/>
+<status status="PASS" starttime="20220125 19:53:35.831" endtime="20220125 19:53:36.792"/>
 </kw>
 <kw name="Acessar a pagina login do site" library="Resource">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220124 22:55:19.416" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
-<status status="PASS" starttime="20220124 22:55:19.415" endtime="20220124 22:55:19.601"/>
+<msg timestamp="20220125 19:53:36.792" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20220125 19:53:36.792" endtime="20220125 19:53:36.993"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Swag Labs</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220124 22:55:19.604" level="INFO">Page title is 'Swag Labs'.</msg>
-<status status="PASS" starttime="20220124 22:55:19.601" endtime="20220124 22:55:19.604"/>
+<msg timestamp="20220125 19:53:36.995" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20220125 19:53:36.993" endtime="20220125 19:53:36.995"/>
 </kw>
-<status status="PASS" starttime="20220124 22:55:19.415" endtime="20220124 22:55:19.604"/>
+<status status="PASS" starttime="20220125 19:53:36.792" endtime="20220125 19:53:36.996"/>
 </kw>
 <kw name="Preencher o &quot;usuario&quot;" library="Resource">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=user-name</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220124 22:55:19.605" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
-<status status="PASS" starttime="20220124 22:55:19.605" endtime="20220124 22:55:19.667"/>
+<msg timestamp="20220125 19:53:36.996" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20220125 19:53:36.996" endtime="20220125 19:53:37.056"/>
 </kw>
-<status status="PASS" starttime="20220124 22:55:19.604" endtime="20220124 22:55:19.667"/>
+<status status="PASS" starttime="20220125 19:53:36.996" endtime="20220125 19:53:37.056"/>
 </kw>
 <kw name="Preencher com a &quot;senha&quot;" library="Resource">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>xpath=//*[@id="password"]</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220124 22:55:19.668" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//*[@id="password"]'.</msg>
-<status status="PASS" starttime="20220124 22:55:19.668" endtime="20220124 22:55:19.716"/>
+<msg timestamp="20220125 19:53:37.057" level="INFO">Typing text 'secret_sauce' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20220125 19:53:37.057" endtime="20220125 19:53:37.103"/>
 </kw>
-<status status="PASS" starttime="20220124 22:55:19.667" endtime="20220124 22:55:19.716"/>
+<status status="PASS" starttime="20220125 19:53:37.057" endtime="20220125 19:53:37.103"/>
 </kw>
 <kw name="Clicar no botao &quot;login&quot;" library="Resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220124 22:55:19.717" level="INFO">Clicking element 'id=login-button'.</msg>
-<status status="PASS" starttime="20220124 22:55:19.717" endtime="20220124 22:55:19.768"/>
+<msg timestamp="20220125 19:53:37.104" level="INFO">Clicking element 'id=login-button'.</msg>
+<status status="PASS" starttime="20220125 19:53:37.104" endtime="20220125 19:53:37.155"/>
 </kw>
-<status status="PASS" starttime="20220124 22:55:19.717" endtime="20220124 22:55:19.768"/>
+<status status="PASS" starttime="20220125 19:53:37.104" endtime="20220125 19:53:37.155"/>
+</kw>
+<kw name="Validar a pagina home" library="Resource">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Swag Labs</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220125 19:53:37.158" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20220125 19:53:37.156" endtime="20220125 19:53:37.158"/>
+</kw>
+<status status="PASS" starttime="20220125 19:53:37.155" endtime="20220125 19:53:37.158"/>
 </kw>
 <kw name="Clicar no botao &quot;add&quot;" library="Resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=add-to-cart-sauce-labs-bike-light</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220124 22:55:19.769" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-bike-light'.</msg>
-<status status="PASS" starttime="20220124 22:55:19.769" endtime="20220124 22:55:19.867"/>
+<msg timestamp="20220125 19:53:37.159" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-bike-light'.</msg>
+<status status="PASS" starttime="20220125 19:53:37.158" endtime="20220125 19:53:37.188"/>
 </kw>
-<status status="PASS" starttime="20220124 22:55:19.769" endtime="20220124 22:55:19.867"/>
+<status status="PASS" starttime="20220125 19:53:37.158" endtime="20220125 19:53:37.188"/>
 </kw>
 <kw name="Clicar no botao &quot;carrinho&quot;" library="Resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>class=shopping_cart_link</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220124 22:55:19.869" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
-<status status="PASS" starttime="20220124 22:55:19.868" endtime="20220124 22:55:19.910"/>
+<msg timestamp="20220125 19:53:37.189" level="INFO">Clicking element 'class=shopping_cart_link'.</msg>
+<status status="PASS" starttime="20220125 19:53:37.189" endtime="20220125 19:53:37.221"/>
 </kw>
-<status status="PASS" starttime="20220124 22:55:19.868" endtime="20220124 22:55:19.910"/>
+<status status="PASS" starttime="20220125 19:53:37.189" endtime="20220125 19:53:37.221"/>
 </kw>
-<status status="PASS" starttime="20220124 22:55:18.445" endtime="20220124 22:55:19.911"/>
+<kw name="Clicar no botao &quot;checkout&quot;" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="checkout"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220125 19:53:37.222" level="INFO">Clicking element 'xpath=//*[@id="checkout"]'.</msg>
+<status status="PASS" starttime="20220125 19:53:37.222" endtime="20220125 19:53:37.251"/>
+</kw>
+<status status="PASS" starttime="20220125 19:53:37.222" endtime="20220125 19:53:37.251"/>
+</kw>
+<kw name="Preencher o &quot;nome&quot;" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=first-name</arg>
+<arg>Azlin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 19:53:37.252" level="INFO">Typing text 'Azlin' into text field 'id=first-name'.</msg>
+<status status="PASS" starttime="20220125 19:53:37.252" endtime="20220125 19:53:37.305"/>
+</kw>
+<status status="PASS" starttime="20220125 19:53:37.251" endtime="20220125 19:53:37.305"/>
+</kw>
+<kw name="Preencher o &quot;sobrenome&quot;" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=last-name</arg>
+<arg>Blank</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 19:53:37.306" level="INFO">Typing text 'Blank' into text field 'id=last-name'.</msg>
+<status status="PASS" starttime="20220125 19:53:37.305" endtime="20220125 19:53:37.359"/>
+</kw>
+<status status="PASS" starttime="20220125 19:53:37.305" endtime="20220125 19:53:37.359"/>
+</kw>
+<kw name="Preencher o &quot;cep&quot;" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=postal-code</arg>
+<arg>01310000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 19:53:37.360" level="INFO">Typing text '01310000' into text field 'id=postal-code'.</msg>
+<status status="PASS" starttime="20220125 19:53:37.360" endtime="20220125 19:53:37.411"/>
+</kw>
+<status status="PASS" starttime="20220125 19:53:37.360" endtime="20220125 19:53:37.411"/>
+</kw>
+<kw name="Clicar no botao &quot;continuar&quot;" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=continue</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220125 19:53:37.412" level="INFO">Clicking element 'id=continue'.</msg>
+<status status="PASS" starttime="20220125 19:53:37.412" endtime="20220125 19:53:37.445"/>
+</kw>
+<status status="PASS" starttime="20220125 19:53:37.411" endtime="20220125 19:53:37.446"/>
+</kw>
+<status status="PASS" starttime="20220125 19:53:35.831" endtime="20220125 19:53:37.446"/>
 </test>
-<status status="PASS" starttime="20220124 22:55:18.295" endtime="20220124 22:55:19.912"/>
+<status status="PASS" starttime="20220125 19:53:35.667" endtime="20220125 19:53:37.447"/>
 </suite>
 <statistics>
 <total>
@@ -85,7 +142,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test produto">Test produto</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test usuario">Test usuario</stat>
 </suite>
 </statistics>
 <errors>

@@ -5,7 +5,7 @@ Test Setup        Abrir navegador                 #Test Setup mando ele executar
 #Test Teardown    Fechar navegador                #Após executar o teste, fazer algo final
 
 ***Test Cases***
-Caso de Teste 03: Adicionar um produto ao carrinho
+Caso de Teste 04: Cadastro de usuario
     Acessar a pagina login do site
     Preencher o "usuario"
     Preencher com a "senha"
@@ -13,3 +13,8 @@ Caso de Teste 03: Adicionar um produto ao carrinho
     Validar a pagina home
     Clicar no botao "add"
     Clicar no botao "carrinho"
+    Clicar no botao "checkout"
+    Preencher o "nome"
+    Preencher o "sobrenome"
+    Preencher o "cep"
+    Clicar no botao "continuar"
